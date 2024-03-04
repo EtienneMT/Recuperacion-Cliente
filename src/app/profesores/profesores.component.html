@@ -1,0 +1,23 @@
+<h3>Componente Profesores:</h3>
+
+<main>
+
+    <div class="input-group mb-3" style="width: 300px;">
+        <input type="text" name="id" class="form-control" placeholder="Introduce un id">
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="button">Get</button>
+        </div>
+    </div>
+
+    <ul class="list-group mt-2">
+        <li *ngFor="let profesor of profesores" class="list-group-item">
+            ID: {{profesor.id}} <br>
+            USUARIO: {{profesor.usuario}} <br>
+            EMAIL: {{profesor.email}} <br>
+            MODULO: {{profesor.modulo}} <br>
+            HORAS: {{profesor.horas}} <br>
+            FOTO: {{profesor.foto}} <br>
+        </li>
+    </ul>
+
+</main>
